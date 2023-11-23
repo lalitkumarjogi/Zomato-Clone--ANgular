@@ -1,0 +1,16 @@
+.card{
+    width: 300px;
+    min-height: 400px;
+   
+}
+.col
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 50px;
+
+}
+.btn{
+     float:right;
+}
