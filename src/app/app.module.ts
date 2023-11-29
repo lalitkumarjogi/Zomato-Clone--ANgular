@@ -7,7 +7,9 @@ import { FoodComponent } from './page/food/food.component';
 import { ServingFoodComponent } from './page/serving-food/serving-food.component';
 import { FoodItemComponent } from './page/food-item/food-item.component';
 import {HttpClientModule} from '@angular/common/http'
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,7 @@ import {FormsModule} from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
-    ,FormsModule
+    ,FormsModule, NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

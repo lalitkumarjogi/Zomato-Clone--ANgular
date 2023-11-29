@@ -8,11 +8,11 @@ import { RestorantService } from 'src/app/restorant.service';
   styleUrls: ['./serving-food.component.css']
 })
 export class ServingFoodComponent {
-   currentCategoryId:number=0
-  restorantlist:any
- constructor(private actiavtedRoute: ActivatedRoute,private http: RestorantService ,private router:Router){
-  this.actiavtedRoute.params.subscribe((res:any)=>{
-    debugger;
+    currentCategoryId:number=0
+    restorantlist:any
+    constructor(private actiavtedRoute: ActivatedRoute,private http: RestorantService ,private router:Router){
+     this.actiavtedRoute.params.subscribe((res:any)=>{
+     debugger;
          this.currentCategoryId=res.id
          this.GetRestaurantServingByCategory()
     }) 
